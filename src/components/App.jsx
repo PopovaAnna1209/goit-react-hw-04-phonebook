@@ -24,7 +24,7 @@ export const App = () => {
 
     const addContacts = contacts.some(
       i =>
-        (i.name === contact.name.toLowerCase() &&
+        (i.name.toLowerCase() === contact.name.toLowerCase() || 
           i.number === contact.number) ||
         i.number === contact.number
     );
